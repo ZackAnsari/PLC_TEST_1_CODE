@@ -1,0 +1,5 @@
+import re
+
+def is_float_literal(string):
+    regex = r'[-+]?\d*\.?\d+([eE][-+]?\d+)?'
+    return bool(re.fullmatch(regex, string))
